@@ -1,8 +1,8 @@
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavbarComponent } from './MyComponents/navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
 import { ToDo } from './ToDo';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { FooterComponent } from './MyComponents/footer/footer.component';
 import { HeroSectionComponent } from './MyComponents/hero-section/hero-section.component';
 import { AddTodoComponent } from './MyComponents/add-todo/add-todo.component';

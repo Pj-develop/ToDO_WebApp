@@ -1,8 +1,9 @@
-
 <div class="my-3 m-5">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">{{ todo.title }}</li>
     <li class="list-group-item">{{ todo.desc }}</li>
-    <button class="btn btn-danger" (click)="OnClick(todo)">Delete</button>
+    <li class="list-group-item">
+      <button class="btn btn-danger" (click)="OnClick(todo)">Delete</button>
+    </li>
   </ul>
 </div>

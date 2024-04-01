@@ -1,20 +1,5 @@
-<>
 <app-navbar></app-navbar>
-<h1>Hello {{ name }}</h1>
-<div class="alert alert-primary">HHHH</div>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<!-- <ul class="list-group" *ngFor="let todo of ToDo1">
-    <li class="list-group-item">
-      {{ todo.title }}------]------- {{ todo.desc }}
-    </li>
-  </ul> -->
+
 <div class="container-fluid">
   <app-add-todo (todoAdd)="addTodoP($event)"></app-add-todo>
 </div>
@@ -22,7 +7,11 @@
   <ul class="list-group" *ngFor="let todo of ToDo1">
     <li>
       <app-footer [todo]="todo" (todoDel)="deleteTodoP($event)"></app-footer>
+      <router-outlet></router-outlet>
     </li>
   </ul>
 </div>
-<ng-template #elseblock><h2>There is nothing to display !!!</h2></ng-template>
+
+<ng-template #elseblock
+  ><h2>There is nothing to display !!! <router-outlet></router-outlet></h2
+></ng-template>
